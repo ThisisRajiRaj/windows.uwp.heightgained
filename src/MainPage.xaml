@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="HeightGained.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HeightGained"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid BorderThickness="2">
+        <TextBlock HorizontalAlignment="Left" Margin="100,214,0,0" Text="Grade in %" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="15"/>
+        <TextBox x:Name="gradeTxtBox" HorizontalAlignment="Left" Margin="200,208,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="distanceTxtBox" HorizontalAlignment="Left" Margin="200,265,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,272,0,0" Text="Distance" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <ComboBox x:Name="unitsComboBox" Margin="275,266,0,0" Width="74" ItemsSource="{x:Bind units}" SelectionChanged="ComboBox_SelectionChanged"/>
+        <Button Content="Compute" Margin="200,325,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock x:Name="resultsView" HorizontalAlignment="Left" Margin="175,385,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="150,136,0,0" Text="Height Gained Calculator" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="24"/>
+
+    </Grid>
+</Page>
