@@ -42,6 +42,10 @@ catch
     # Ignore telemetry errors
 }
 
+
+# Turn on Developer mode for msix cert install
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUnlock" /t REG_DWORD /f /v "AllowDevelopmentWithoutDevLicense" /d "1"
+
 $currLocation = Get-Location
 Set-Location $PSScriptRoot
 Invoke-Expression ".\Add-AppDevPackage.ps1 $scriptArgs"

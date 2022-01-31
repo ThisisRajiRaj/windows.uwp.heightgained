@@ -6,8 +6,8 @@
 # installers and other scripts for install, launch, close, and uninstall
 
 $root = $args[0]
-$msixfolder = $root + "/AppPackages/" + $args[1]
-$binfolder= $root + "/bin"
-$scriptsfolder = $root +"/scripts"
+$msixfolder = $root + "\AppPackages\" + $args[1]
+$binfolder= $root + "\bin"
+$scriptsfolder = $root +"\scripts"
 
 Compress-Archive -Path $msixfolder\Add-AppDevPackage.resources, $msixfolder\Dependencies\*, $msixfolder\HeightGained*, $scriptsfolder\*.ps1 -DestinationPath $binfolder\HeightGained_uwp.zip -Force
