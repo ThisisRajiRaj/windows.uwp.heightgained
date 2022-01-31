@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="05bd3d80-77bc-423d-b6ed-002992aafd50"
-    Publisher="CN=rajiraj"
-    Version="1.0.0.0" />
+    Name="24874rajiraj.HeightGained"
+    Publisher="CN=6F974D9D-DCB8-4FD3-976A-C1961516EE27"
+    Version="1.0.2.0" />
 
-  <mp:PhoneIdentity PhoneProductId="05bd3d80-77bc-423d-b6ed-002992aafd50" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="e0335eb2-6b73-4807-9bde-8510411b1cc0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>App1</DisplayName>
+    <DisplayName>HeightGained</DisplayName>
     <PublisherDisplayName>rajiraj</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
