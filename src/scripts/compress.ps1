@@ -1,6 +1,7 @@
 # Pass in as arguments:
 # param 1: root folder absolute path contain AppPackages, scripts and bin folders
-# param 2: name of the folder inside AppPackages that contains the msixbundle file for the app
+# param 2: name of the folder that contains the msixbundle file for the app. I used Visual Studio's Create App Package functionality
+# to create the msix installer files.
 # This will create a zip file for Test Base upload including the needed msix files
 # installers and other scripts for install, launch, close, and uninstall
 
