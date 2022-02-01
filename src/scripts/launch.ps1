@@ -1,5 +1,5 @@
 $name=(Get-AppxPackage -Name "*HeightGained*").PackageFamilyName
-$result = Start-Process explorer.exe shell:AppsFolder\$name!App
+$result = Start-Process -FilePath shell:AppsFolder\$name!App -Verbose
 Write-Host $result
 
 sleep 5
