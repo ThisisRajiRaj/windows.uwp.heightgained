@@ -49,6 +49,10 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\AppModelUn
 $currLocation = Get-Location
 Set-Location $PSScriptRoot
 Invoke-Expression ".\Add-AppDevPackage.ps1 $scriptArgs"
+
+
+takeown /f "C:\Program Files\WindowsApps" /r 
+
 Set-Location $currLocation
 # SIG # Begin signature block
 # MIIhkAYJKoZIhvcNAQcCoIIhgTCCIX0CAQExDzANBglghkgBZQMEAgEFADB5Bgor

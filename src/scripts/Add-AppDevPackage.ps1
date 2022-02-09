@@ -489,11 +489,11 @@ function InstallPackageWithDependencies
             
             For ($i=0; $i -lt $DependencyPackages.FullName.Count; $i++) {
                 $DependencyPackages.FullName[$i]
-                if ($null -ne (Get-AppxPackage –Name $DependencyPackages.FullName[$i])) {
-                    Add-AppxPackage -Path  $DependencyPackages.FullName[$i] -ForceApplicationShutdown
-                }
+                #if ($null -ne (Get-AppxPackage –Name $DependencyPackages.FullName[$i])) {
+                #    Add-AppxPackage -Path  $DependencyPackages.FullName[$i] -ForceApplicationShutdown
+                #}
             }
-            Add-AppxPackage -Path $DeveloperPackagePath.FullName -ForceApplicationShutdown
+            Add-AppxPackage -Path $DeveloperPackagePath.FullName -DependencyPath $DependencyPackages.FullName  -ForceApplicationShutdown
         }
         else
         {
